@@ -1,0 +1,13 @@
+Approach:
+
+The problem statement asks us to categorize citizen's complaint based on predefined categories. In the given training datasets, the complaint summary looks like the most important feature based on which the categorization can be done. So, my solution needs to consider only complaint summary as the feature. Since the complaint summary is in text, we need good feature extraction techniques from the given text. Scikit learn provides CountVectorizer and TFIDF vectorizer to learn features from a corpus of words. So, my solution considered the features provided by TFIDF vectorizer and trained it against the class of complaint categories like lack of service, malfeasance, allegation and department violations. I used the Random Forest classifier to train the model. 
+
+Feature Engineering:
+
+Used CountVecotrizer and TFIDF vectorizer from Scikit-learn to provide features for training
+
+Tools used: Pandas and Sci-kit learn
+
+
+
+ 
